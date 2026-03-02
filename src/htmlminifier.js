@@ -13,7 +13,6 @@ function trimWhitespace(str) {
 }
 
 function collapseWhitespaceAll(str) {
-  // Non-breaking space is specifically handled inside the replacer function here:
   return str && str.replace(/[ \n\r\t\f\xA0]+/g, function(spaces) {
     return spaces === '\t' ? '\t' : spaces.replace(/(^|\xA0+)[^\xA0]+/g, '$1 ');
   });
