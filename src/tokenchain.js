@@ -24,6 +24,7 @@ Sorter.prototype.sort = function(tokens, fromIndex) {
 };
 
 function TokenChain() {
+  
 }
 
 TokenChain.prototype = {
